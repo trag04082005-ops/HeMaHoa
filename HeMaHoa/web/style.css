@@ -1,0 +1,614 @@
+
+/* =====================================
+   CRYPTO SYSTEM - MAIN CSS
+   GIAO DIEN 9 THUAT TOAN
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f8fc;
+    color: #26364a;
+}
+
+/* =====================================
+   HEADER
+===================================== */
+
+.header {
+    background: #fff;
+    border-bottom: 1px solid #e5eaf1;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #1565c0;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #34445a;
+    font-size: 15px;
+    font-weight: 600;
+    transition: .2s;
+}
+
+nav a:hover {
+    color: #1565c0;
+}
+
+/* =====================================
+   HERO
+===================================== */
+
+.hero {
+    background: linear-gradient(120deg, #0d47a1, #1976d2);
+    color: white;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.tag {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #ffffff20;
+    border: 1px solid #ffffff50;
+    border-radius: 30px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 22px 0 15px;
+}
+
+.hero p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #e3efff;
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 28px;
+    background: white;
+    color: #1565c0;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 7px;
+    transition: .2s;
+}
+
+.hero-button:hover {
+    background: #eaf3ff;
+    transform: translateY(-2px);
+}
+
+/* =====================================
+   MAIN
+===================================== */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 65px 25px;
+}
+
+.algorithm-section,
+.algorithm-panel {
+    scroll-margin-top: 100px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-heading span {
+    color: #1976d2;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 30px;
+    margin: 12px 0;
+    color: #183153;
+}
+
+.section-heading p {
+    color: #718096;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* =====================================
+   9 ALGORITHM CARDS
+===================================== */
+
+.algorithm-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.algorithm-card {
+    display: block;
+    width: 100%;
+    min-height: 190px;
+    text-align: left;
+    background: white;
+    padding: 25px;
+    border: 1px solid #e6edf5;
+    border-radius: 12px;
+    color: inherit;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.algorithm-card:hover {
+    transform: translateY(-5px);
+    border-color: #1976d2;
+    box-shadow: 0 8px 25px #1565c018;
+}
+
+.algorithm-card.active {
+    border: 2px solid #1976d2;
+    background: #f0f7ff;
+    box-shadow: 0 5px 20px #1565c020;
+}
+
+.number {
+    color: #1976d2;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 17px;
+}
+
+.algorithm-card h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+    color: #183153;
+}
+
+.algorithm-card p {
+    color: #718096;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.card-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #1565c0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* =====================================
+   ALGORITHM INPUT PANEL
+===================================== */
+
+.algorithm-panel {
+    display: none;
+    background: white;
+    margin-top: 65px;
+    padding: 40px;
+    border: 1px solid #e3eaf3;
+    border-radius: 14px;
+    box-shadow: 0 8px 30px #1831530d;
+}
+
+.algorithm-panel .section-heading {
+    margin-bottom: 35px;
+}
+
+.algorithm-panel .section-heading h2 {
+    color: #1565c0;
+}
+
+.algorithm-panel form {
+    max-width: 850px;
+    margin: auto;
+}
+
+/* =====================================
+   FORM GROUP
+===================================== */
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #183153;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* INPUT */
+
+.form-group input {
+    display: block;
+    width: 100%;
+    height: 48px;
+    padding: 12px 15px;
+    border: 1px solid #d5e2f0;
+    border-radius: 8px;
+    background: #f9fbff;
+    color: #26364a;
+    font-size: 15px;
+    outline: none;
+    transition: .2s;
+}
+
+/* TEXTAREA */
+
+.form-group textarea {
+    display: block;
+    width: 100%;
+    min-height: 120px;
+    padding: 15px;
+    border: 1px solid #d5e2f0;
+    border-radius: 8px;
+    background: #f9fbff;
+    color: #26364a;
+    font-size: 15px;
+    line-height: 1.7;
+    resize: vertical;
+    outline: none;
+    transition: .2s;
+}
+
+/* SELECT */
+
+.form-group select {
+    display: block;
+    width: 100%;
+    height: 48px;
+    padding: 0 15px;
+    border: 1px solid #d5e2f0;
+    border-radius: 8px;
+    background: #f9fbff;
+    color: #26364a;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    transition: .2s;
+}
+
+/* FOCUS */
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #1976d2;
+    background: white;
+    box-shadow: 0 0 0 3px #1976d218;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #a0aec0;
+}
+
+/* HINT */
+
+.form-group small {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 13px;
+    background: #eff6ff;
+    border-left: 3px solid #1976d2;
+    border-radius: 5px;
+    color: #52708f;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/* =====================================
+   MULTIPLE INPUT COLUMNS
+===================================== */
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* =====================================
+   HILL MATRIX
+===================================== */
+
+textarea[name="keyMatrix"] {
+    min-height: 145px;
+    font-family: Consolas, monospace;
+    letter-spacing: 1px;
+    line-height: 1.9;
+}
+
+/* =====================================
+   DIFFIE-HELLMAN
+===================================== */
+
+input[name="p"],
+input[name="g"],
+input[name="privateA"],
+input[name="privateB"] {
+    font-family: Consolas, monospace;
+}
+
+/* =====================================
+   RSA SIGNATURE
+===================================== */
+
+textarea[name="privateKey"],
+textarea[name="publicKey"],
+textarea[name="signature"] {
+    min-height: 100px;
+    font-family: Consolas, monospace;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+/* =====================================
+   OPERATION BUTTONS
+===================================== */
+
+.operation-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid #e6edf5;
+}
+
+.operation-buttons button {
+    min-width: 145px;
+    padding: 14px 23px;
+    border: none;
+    border-radius: 8px;
+    background: #1565c0;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.operation-buttons button:hover {
+    background: #0d47a1;
+    transform: translateY(-2px);
+}
+
+.operation-buttons button:active {
+    transform: scale(.98);
+}
+
+/* ENCRYPT */
+
+.operation-buttons button[value="encrypt"],
+.operation-buttons button[value="sign"] {
+    background: #1565c0;
+}
+
+.operation-buttons button[value="encrypt"]:hover,
+.operation-buttons button[value="sign"]:hover {
+    background: #0d47a1;
+}
+
+/* DECRYPT */
+
+.operation-buttons button[value="decrypt"] {
+    background: #0d9488;
+}
+
+.operation-buttons button[value="decrypt"]:hover {
+    background: #08776e;
+}
+
+/* DIFFIE-HELLMAN */
+
+.operation-buttons button[value="exchange"] {
+    background: #7c3aed;
+}
+
+.operation-buttons button[value="exchange"]:hover {
+    background: #6025c5;
+}
+
+/* RSA */
+
+.operation-buttons button[value="generate"] {
+    background: #2563eb;
+}
+
+.operation-buttons button[value="verify"] {
+    background: #15803d;
+}
+
+.operation-buttons button[value="generate"]:hover {
+    background: #1d4ed8;
+}
+
+.operation-buttons button[value="verify"]:hover {
+    background: #166534;
+}
+
+/* =====================================
+   RESULT
+===================================== */
+
+.result-box {
+    max-width: 850px;
+    margin: 30px auto 0;
+    padding: 25px;
+    border: 1px solid #b9d8f7;
+    border-left: 5px solid #1976d2;
+    border-radius: 10px;
+    background: #f0f7ff;
+}
+
+.result-box h3 {
+    color: #1565c0;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.result-box pre {
+    padding: 15px;
+    background: white;
+    border-radius: 7px;
+    border: 1px solid #e2eaf3;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    color: #26364a;
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* ERROR */
+
+.error-box {
+    border-color: #f3b5b5;
+    border-left-color: #dc3545;
+    background: #fff5f5;
+}
+
+.error-box h3 {
+    color: #c62828;
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    background: #102f55;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+footer p {
+    color: #c5d5e8;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/* =====================================
+   RESPONSIVE TABLET
+===================================== */
+
+@media (max-width: 768px) {
+
+    .header-content {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 65px 20px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .algorithm-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .algorithm-panel {
+        padding: 25px 20px;
+    }
+}
+
+/* =====================================
+   RESPONSIVE MOBILE
+===================================== */
+
+@media (max-width: 480px) {
+
+    .algorithm-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .algorithm-panel {
+        padding: 22px 15px;
+    }
+
+    .operation-buttons {
+        flex-direction: column;
+    }
+
+    .operation-buttons button {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .section-heading h2 {
+        font-size: 25px;
+    }
+}
